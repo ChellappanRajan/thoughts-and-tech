@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 
 const pageTitle = "About Me";
 
@@ -22,10 +23,7 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Angular", "Lit", "A11Y","
     <meta name="generator" content={Astro.generator} />
     <title>Exploring Tech with Chellappan</title>
     <style>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
+
       .skill {
         color: green;
         font-weight: bold;
@@ -33,36 +31,21 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Angular", "Lit", "A11Y","
     </style>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog">Blog</a>
-    <h1>About</h1>
-    <p>
-      Hello! I'm Chellappan, a passionate web developer and tech enthusiast from
-      India. My journey in the world of technology is fueled by a love for
-      creating web experiences and exploring the latest advancements in
-      front-end development. I specialize in building components and
-      applications with modern web technologies like Lit, Angular, React and
-      TypeScript. Beyond coding, I'm an avid learner, constantly diving into new
-      areas like machine learning and artificial intelligence to understand the
-      algorithms that shape our digital world. Improving my English
-      communication is another goal of mine, and I enjoy practicing language
-      skills while sharing insights with you. When I'm not immersed in tech,
-      you'll find me enjoying a game of badminton, or playing cricket with
-      friends. I have a Golden Retriever who keeps me on my toes and adds joy to
-      my daily life. I also love nature and dream of visiting the stunning
-      landscapes of Switzerland someday. This blog is my space to share
-      knowledge, experiences, and ideas about web development, best practices,
-      and more. I hope my posts help fellow developers and inspire others to
-      learn and grow alongside me!
-    </p>
+   <div>
 
-    <p>My skills are:</p>
+      <Navigation></Navigation>
+ 
+   <main>
+    <h1>Hi, I’m Chellappan.</h1>
+    <p>
+      A web developer from India passionate about front-end tech like Lit, Angular, React, and TypeScript. I love exploring machine learning and improving my English communication. Outside of tech, I enjoy playing badminton, cricket, and spending time with my Golden Retriever. I dream of visiting the Swiss Alps someday!
+    </p>
+   </main>
+       <!-- <p>My skills are:</p>
     <ul>
       {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
-
+    </ul> -->
     <Footer />
-
+   </div>
   </body>
 </html>

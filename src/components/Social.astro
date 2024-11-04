@@ -1,4 +1,16 @@
 ---
 const { platform, username  } = Astro.props;
+
+const generateURL = (platform:string, username:string) => {
+  const lplatform = platform.toLocaleLowerCase();
+  if (lplatform === "bluesky") {
+    return `https://${username}`; // For Bluesky, use the username as the domain
+  }
+  return `https://www.${lplatform}.com/${username}`; // Default URL structure
+};
+
+
 ---
-<a href={`https://www.${platform}.com${username}`}>{platform}</a>
+
+
+<a href={generateURL(platform, username)}>{platform}</a>
