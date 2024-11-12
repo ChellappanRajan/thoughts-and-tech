@@ -3,31 +3,9 @@ import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = `Blog Post`;
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Exploring Tech with Chellappan</title>
-	</head>
-	<body>
-		<Header></Header>	
-		  <h1>My Astro Learning Blog</h1>
-  		  <p>This is where I will post about my journey learning Astro.</p>
-
-			<ul>
-				<li><a href="/posts/css-variables-avoid-common-mistakes/">CSS Variables Done Right: Avoiding Common Mistakes</a></li>
-			</ul>
-			<Footer />
-
+<BaseLayout pageTitle={pageTitle}>
 		
-			<script>
-				import '../scripts/menu.js';
-			</script>
-		  </body>
-	</body>
-</html>
+</BaseLayout>

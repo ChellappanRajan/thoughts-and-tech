@@ -3,39 +3,28 @@ import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+
+const pageTitle = `Exploring Tech with Chellappan`;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-		<title>Exploring Tech with Chellappan</title>
-	</head>
-	<body class="font-mono flex flex-col h-screen">
-	<Header></Header>	
-	
-		<main class="mt-8">
-			<h1 class="text-2xl">Hi, I’m Chellappan.</h1>
-			<p class="">
-			  A web developer from India passionate about front-end tech like Lit, Angular, React, and TypeScript. I love exploring new technologies. Outside of tech, I enjoy playing badminton, cricket, and spending time with my Golden Retriever. I dream of visiting the Swiss Alps someday!
-			</p>
-			<h2 class="text-4xl mt-4">Most recent articles</h2>
-			<ul class="mt-4">
-				<li class="flex flex-col">
-					<span>
-						September 2024
-					</span>
-					<a class="text-blue-600" href="/posts/css-variables-avoid-common-mistakes">CSS Variables Done Right: Avoiding Common Mistakes</a>
-				</li>
-			</ul>
-		</main>
-		<Footer />
 
-	</body>
-</html>
+		<BaseLayout pageHeadTitle={pageTitle}>
+			<!-- <main class="mt-8">
+				<h1 class="text-2xl">Hi, I’m Chellappan.</h1>
+				<p class="">
+				  A web developer from India passionate about front-end tech like Lit, Angular, React, and TypeScript. I love exploring new technologies. Outside of tech, I enjoy playing badminton, cricket, and spending time with my Golden Retriever. I dream of visiting the Swiss Alps someday!
+				</p>
+				<h2 class="text-4xl mt-4">Most recent articles</h2>
+				<ul class="mt-4">
+					<li class="flex flex-col">
+						<span>
+							September 2024
+						</span>
+						<a class="text-blue-600" href="/posts/css-variables-avoid-common-mistakes">CSS Variables Done Right: Avoiding Common Mistakes</a>
+					</li>
+				</ul>
+			</main> -->
+		</BaseLayout>
+

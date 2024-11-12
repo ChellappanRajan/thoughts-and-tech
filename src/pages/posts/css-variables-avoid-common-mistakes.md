@@ -1,11 +1,12 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'CSS Variables Done Right: Avoiding Common Mistakes'
 pubDate: 2024-11-03
 description: 'Explore the best practices for using CSS custom properties, including how to handle inheritance and implement efficient fallbacks.'
-author: 'Selvam'
+author: 'Chellappan'
 image:
-    url: './public/custom-property.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
+    url: '../../../public/custom-property.webp'
+    alt: 'AI Generated Image'
 tags: ["css", "web development", "best practices", "custom properties"]
 ---
 
