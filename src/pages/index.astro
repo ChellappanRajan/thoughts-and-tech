@@ -1,30 +1,32 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-
+import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = `Exploring Tech with Chellappan`;
 ---
 
-
-		<BaseLayout pageHeadTitle={pageTitle}>
-			<!-- <main class="mt-8">
-				<h1 class="text-2xl">Hi, I’m Chellappan.</h1>
-				<p class="">
-				  A web developer from India passionate about front-end tech like Lit, Angular, React, and TypeScript. I love exploring new technologies. Outside of tech, I enjoy playing badminton, cricket, and spending time with my Golden Retriever. I dream of visiting the Swiss Alps someday!
-				</p>
-				<h2 class="text-4xl mt-4">Most recent articles</h2>
-				<ul class="mt-4">
-					<li class="flex flex-col">
-						<span>
-							September 2024
-						</span>
-						<a class="text-blue-600" href="/posts/css-variables-avoid-common-mistakes">CSS Variables Done Right: Avoiding Common Mistakes</a>
-					</li>
-				</ul>
-			</main> -->
-		</BaseLayout>
-
+<BaseLayout pageHeadTitle={pageTitle}>
+  <main class="mt-8">
+    <h1 class="text-2xl">Hi, I’m Chellappan.</h1>
+    <p class="">
+      A web developer from India passionate about front-end tech like Lit,
+      Angular, React, and TypeScript. I love exploring new technologies. Outside
+      of tech, I enjoy playing badminton, cricket, and spending time with my
+      Golden Retriever. I dream of visiting the Swiss Alps someday!
+    </p>
+    <h2 class="text-4xl mt-4">Most recent articles</h2>
+    <ul class="mt-4">
+      <li class="flex flex-col">
+        <span> September 2024 </span>
+        <a
+          class="text-blue-600"
+          href="/posts/css-variables-avoid-common-mistakes"
+          >CSS Variables Done Right: Avoiding Common Mistakes</a
+        >
+      </li>
+    </ul>
+  </main>
+</BaseLayout>
