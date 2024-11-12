@@ -1,11 +1,19 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = `Blog Post`;
+const pageTitle = `Blog`;
+const allPosts = await Astro.glob('./posts/*.md');
 ---
 <BaseLayout pageTitle={pageTitle}>
-		
+    <ul class="mt-4">
+        {allPosts.map((post) => (<li class="flex flex-col gap-2">
+          <span> September 2024 </span>
+          <a
+            class="text-blue-600"
+            href="/posts/css-variables-avoid-common-mistakes"
+            >{post.frontmatter.title}</a
+          >
+        </li>))}
+      </ul>
 </BaseLayout>
