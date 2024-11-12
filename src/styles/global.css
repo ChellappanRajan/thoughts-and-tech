@@ -1,7 +1,19 @@
-html {
-    background-color: #f1f5f9;
-    font-family: sans-serif;
-  }
+
+
+html:before {
+  background: radial-gradient(#4f46e4 15%,transparent 16%,transparent 49%,#4f46e4 50%,transparent 51%),radial-gradient(circle at top left,#4f46e4 10%,transparent 0,transparent 39%,#4f46e4 40%,transparent 41%),radial-gradient(circle at top right,#4f46e4 10%,transparent 0,transparent 39%,#4f46e4 40%,transparent 41%),radial-gradient(circle at bottom left,#4f46e4 10%,transparent 0,transparent 39%,#4f46e4 40%,transparent 41%),radial-gradient(circle at bottom right,#4f46e4 10%,transparent 0,transparent 39%,#4f46e4 40%,transparent 41%);
+  background-attachment: fixed;
+  background-color: #fff;
+  background-size: 1em 1em;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: .03;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1
+}
   
   body {
     margin: 0 auto;
@@ -10,6 +22,7 @@ html {
     padding: 1rem;
     line-height: 1.5;
   }
+  
  :root{
   --font-size-xl:clamp(1rem, 8vw, 3rem);
  } 
@@ -39,21 +52,18 @@ html {
 
   footer {
     text-align: center;
-    padding: 20px;
   }
-  
+/*   
   a:focus, a:hover {
     color: red;
     text-underline-offset: 2px;
-} 
+}  */
 
-nav{
-  margin-bottom: 2rem;
-}
-
-a{
+/* a{
   text-decoration-thickness: 1px;
   text-decoration-style:wavy;
   text-underline-offset: 8px;
   transition: all .25s ease;
-}
+} */
+
+
