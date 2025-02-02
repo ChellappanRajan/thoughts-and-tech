@@ -1,7 +1,6 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
 const pageTitle = `Blog`;
 const allPosts = await Astro.glob('./posts/*.md');
 ---

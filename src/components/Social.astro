@@ -5,7 +5,13 @@ const generateURL = (platform:string, username:string) => {
   const lplatform = platform.toLocaleLowerCase();
   if (lplatform === "bluesky") {
     return `https://${username}`; // For Bluesky, use the username as the domain
+  }else if(lplatform === 'so'){
+    return `https://stackoverflow.com/users/7790376/chellappan-%e0%ae%b5`
   }
+  else if(lplatform === 'linkedin'){
+    return `https://www.linkedin.com/in/chellappan-jsdev/`
+  }
+
   return `https://www.${lplatform}.com/${username}`; // Default URL structure
 };
 

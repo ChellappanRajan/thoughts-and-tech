@@ -7,6 +7,8 @@ const { pageTitle } = Astro.props;
 
 ---
 
+
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -16,31 +18,13 @@ const { pageTitle } = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>{pageTitle}</title>
+    
   </head>
-  <body class="font-mono">
+  <body class="mx-auto max-w-2xl px-5 py-12 font-mono ">
     <Header />
-    <h1>{pageTitle}</h1>
-    <!-- <main class="mt-8">
-        <h1 class="text-2xl">Hi, I’m Chellappan.</h1>
-        <p class="">
-          A web developer from India passionate about front-end tech like Lit,
-          Angular, React, and TypeScript. I love exploring new technologies.
-          Outside of tech, I enjoy playing badminton, cricket, and spending time
-          with my Golden Retriever. I dream of visiting the Swiss Alps someday!
-        </p>
-        <h2 class="text-4xl mt-4">Most recent articles</h2>
-        <ul class="mt-4">
-          <li class="flex flex-col">
-            <span> September 2024 </span>
-            <a
-              class="text-blue-600"
-              href="/posts/css-variables-avoid-common-mistakes"
-              >CSS Variables Done Right: Avoiding Common Mistakes</a
-            >
-          </li>
-        </ul>
-      </main> -->
-        <slot></slot>  
+    <h1 class="text-[40px] font-black leading-[44px] text-[--title]">{pageTitle}</h1>
+
+    <slot></slot>  
     <Footer />
   </body>
 </html>

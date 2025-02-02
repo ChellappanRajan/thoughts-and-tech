@@ -21,38 +21,25 @@ html:before {
     max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
-  }
+    /* font-size: clamp(1rem, -0.875rem + 8.333333vw, 3.5rem);  */
   
+  }
+    
  :root{
   --font-size-xl:clamp(1rem, 8vw, 3rem);
+  --font-size-sm:clamp(0.75rem, 5vw, 1.5rem);
  } 
   * {
     box-sizing: border-box;
   }
   
-  h1 {
-    margin: 1rem 0;
-    font-size: var(--font-size-xl);
-  }
   p{
     font-size: 20px;
   }
-
-  .m-lg{
-    margin-block-start: 2rem;
+  .intro{
+    font-size: var(--font-size-sm);
   }
 
-  .spacer{
-    height: 7rem;
-  }
-.flex{
-  display: flex;
-}
-
-
-  footer {
-    text-align: center;
-  }
 /*   
   a:focus, a:hover {
     color: red;
@@ -67,3 +54,18 @@ html:before {
 } */
 
 
+.markdown h1{
+      @apply text-[40px] font-black leading-[44px] text-[--title]; 
+}
+
+.markdown h2{
+  @apply text-[28px] font-black leading-[44px] text-[--title]; 
+}
+.markdown h3 {
+  @apply text-[20px] font-black leading-[44px] text-[--title]; 
+}
+
+/* .markdown h3 {
+  @apply text-[16px] font-black leading-[44px] text-[--title]; 
+  
+} */
